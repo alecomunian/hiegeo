@@ -5,7 +5,7 @@ relative chronology" by C.Zuffetti, A.Comunian, R.Bersezio and
 P.Renard.
 
 For additional information about how to install and run the provided
-Python scripts, please see the PDF file in the `doc` folder, or open
+Python scripts, please check out the `Wiki page <https://bitbucket.org/alecomunian/hiegeo/wiki>`_, the PDF file in the `doc` folder or download and open
 with your favourite browser the file `index.html` (always in the `doc`
 folder).
 
