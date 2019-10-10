@@ -17,7 +17,7 @@
     See the attached documentation for more details.
 
 :Version:
-    See file `hiegeo.py`
+    See file ``hiegeo.py``
     
 :Authors:
     Alessandro Comunian <alessandro.comunian@unimi.it>
