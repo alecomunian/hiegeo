@@ -1,0 +1,25 @@
+Usage
+============
+This section describe an example useage of `hiegeo`.
+
+
+
+
+
+Input files
+*******************
+
+For properly running `hiereo`, you need two files:
+
+1) A `.JSON` file, that contains info about the discretization grid
+   and the rendering of the plots.
+
+2) A data file (`.CSV` format) that include the actual data set, with
+   information about the contact points, chronology and hierarchy.
+
+
+NOTE: In the data-set, the SB starting and ending *x* coordinates
+   should be ideally defined starting from the same value for all the
+   SBs. Alternatively, one can sligly reduce the size of the grid (in
+   this case, a warning message will be printed).
+

@@ -1,0 +1,814 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Module documentation &mdash; hiegeo  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Usage" href="usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> hiegeo
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="purpose.html">Purpose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Module documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">hiegeo</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Module documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-hiegeo">
+<span id="module-documentation"></span><h1>Module documentation<a class="headerlink" href="#module-hiegeo" title="Permalink to this headline">¶</a></h1>
+<dl class="field-list">
+<dt class="field-odd">This file</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">hiegeo.py</span></code></p>
+</dd>
+<dt class="field-even">Purpose</dt>
+<dd class="field-even"><p>hie-geo: “hierarchical geo-modeling”</p>
+<p>A module containing the functions required to read information
+from a geological data-set (contact point) and plot in a
+hierarchical fashion the unit sections.</p>
+</dd>
+<dt class="field-odd">Usage</dt>
+<dd class="field-odd"><p>See <code class="docutils literal notranslate"><span class="pre">hiegeo_test-simple.py</span></code> and <code class="docutils literal notranslate"><span class="pre">hiegeo_test-full.py</span></code> for an example usage.</p>
+</dd>
+<dt class="field-even">Version</dt>
+<dd class="field-even"><dl class="simple">
+<dt>1.9, 2019-10-02 :</dt><dd><p>Some clean up an adding License information.</p>
+</dd>
+<dt>1.8, 2019-07-31 :</dt><dd><p>Version updated with some clean up, before important changes in “rank” 
+and “order” definitions…</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">Some conventions</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>SB:</dt><dd><p>Stratigraphic Bound</p>
+</dd>
+<dt>SU:</dt><dd><p>Stratigraphic Unit</p>
+</dd>
+<dt>Hierarchy:</dt><dd><p>Minumum value stands for lower hierarchical importance;  higher
+values are for more important SBs.</p>
+</dd>
+<dt>chronology:</dt><dd><p>This is the temporal order of the SBs. Lower values corresponds to older
+SBs, while higher values correspond to more recent SBs.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Authors</dt>
+<dd class="field-even"><p>Alessandro Comunian</p>
+</dd>
+<dt class="field-odd">License</dt>
+<dd class="field-odd"><p><cite>hiegeo</cite> is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p><cite>hiegeo</cite> is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with <cite>hiegeo</cite>.  If not, see &lt;<a class="reference external" href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>&gt;.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol class="arabic simple">
+<li><p>At the moment, the points of intersection among surfaces are a
+required input data. Also, it is expected that when two SBs are
+intersecting at one point, the point is defined in the dataset
+for both the SBs.</p></li>
+</ol>
+</div>
+<p>ALTRI DUBBI:</p>
+<p>“Correlation points” or “contact points”?</p>
+<dl class="class">
+<dt id="hiegeo.SBound">
+<em class="property">class </em><code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">SBound</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">data=None</em>, <em class="sig-param">hierarchy=None</em>, <em class="sig-param">chronology=None</em>, <em class="sig-param">xd=None</em>, <em class="sig-param">color=None</em>, <em class="sig-param">parent=None</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.SBound" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class useful to contain all the properties of a Stratigraphic
+Boundary (SB).</p>
+<dl class="method">
+<dt id="hiegeo.SBound.broken_line">
+<code class="sig-name descname">broken_line</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.SBound.broken_line" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is useful to create, for each point of the provided discretization
+along <em>x</em> axis, (<cite>self.xd</cite>), a broken line. A <cite>numpy.nan</cite> value is set
+where the provided “raw” coordinates does not allow to complete the 
+discretization.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="hiegeo.SBound.get_ancestors">
+<code class="sig-name descname">get_ancestors</code><span class="sig-paren">(</span><em class="sig-param">anc_list=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.SBound.get_ancestors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide a list of ancestors of the current SB.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>anc_list: list</dt><dd><p>A partially filled input list can be provided, to
+allow appending additional ancestors.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="hiegeo.SBound.get_obj_above">
+<code class="sig-name descname">get_obj_above</code><span class="sig-paren">(</span><em class="sig-param">hierarchy</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.SBound.get_obj_above" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all the SBs defined in the script with the given hierarchy,
+ordeder by “chronology”.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>hierarchy: integer</dt><dd><p>The hierarchy of the SBs to be plotted.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>A list containing all the defined SBs with the given hierarchy, 
+ordered by “chronology”.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="hiegeo.SBound.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><em class="sig-param">lw=None</em>, <em class="sig-param">chronology=None</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.SBound.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the SB.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>lw: integer</dt><dd><p>This is the line width</p>
+</dd>
+<dt>chronology: integer</dt><dd><p>The relative chronology of the SB.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The values where <code class="docutils literal notranslate"><span class="pre">zd==np.nan</span></code> are not plotted.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="hiegeo.SBound.plot_ax">
+<code class="sig-name descname">plot_ax</code><span class="sig-paren">(</span><em class="sig-param">ax</em>, <em class="sig-param">lw=None</em>, <em class="sig-param">color=None</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.SBound.plot_ax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the SB when a matplotlib axis is provided.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>lw: integer (optional)</dt><dd><p>The line width. Using directly the hierarchies (for example,
+with hierarchies from 1 to 3) seems to provide a figure which
+is OK</p>
+</dd>
+<dt>color: color code (optional)</dt><dd><p>The line color.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The values where <cite>zd==np.nan</cite> are not plotted.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="hiegeo.SBound.plot_fill">
+<code class="sig-name descname">plot_fill</code><span class="sig-paren">(</span><em class="sig-param">ax</em>, <em class="sig-param">hierarchy</em>, <em class="sig-param">alpha</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.SBound.plot_fill" title="Permalink to this definition">¶</a></dt>
+<dd><p>“fill_between” plot of a SU given the bottom SB.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>ax: matplotlib axis</dt><dd><p>The object where to make the plot</p>
+</dd>
+<dt>hierarchy: integer</dt><dd><p>Hierarchy.</p>
+</dd>
+<dt>alpha: float</dt><dd><p>Transparency level.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Using <cite>alpha</cite> as parameter could create problems when one 
+tries to properly represent overlapping regions.
+(and this, in principle, should happen quite frequently when
+dealing with hierarchical models…)</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="hiegeo.SBound.print_hie">
+<code class="sig-name descname">print_hie</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.SBound.print_hie" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print out some info about a SB, in a hierarchical fashion.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="hiegeo.SUnit">
+<em class="property">class </em><code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">SUnit</code><span class="sig-paren">(</span><em class="sig-param">name=None</em>, <em class="sig-param">bot=None</em>, <em class="sig-param">top=None</em>, <em class="sig-param">sbs=None</em>, <em class="sig-param">id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.SUnit" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class useful to contain all the properties related to a SU.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Is is expected that in the same script all the SBounds were already 
+created extracting the information from the correlation/contact points file.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The development of this Class is still work in progress, and only
+basic functionalities are provided for the moment.</p>
+</div>
+<dl class="method">
+<dt id="hiegeo.SUnit.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.SUnit.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot a SU</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.check_data_ingrid">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">check_data_ingrid</code><span class="sig-paren">(</span><em class="sig-param">data</em>, <em class="sig-param">x</em>, <em class="sig-param">z</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.check_data_ingrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if data are contained in the discretization grid.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>data: (pandas DataFrame)</dt><dd><p>The input data set. See the documentation for more details.</p>
+</dd>
+<dt>x, y: numpy arrays</dt><dd><p>These are the discretization grid coordinates.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Actually, the warning message in general is not a “nasty” one, since it only
+states that the definining points of some SBs were not available on all the
+vertical coordinates, and therefore the domain was restricted.</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.create_sb_by_hierarchy">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">create_sb_by_hierarchy</code><span class="sig-paren">(</span><em class="sig-param">data</em>, <em class="sig-param">hierarchy</em>, <em class="sig-param">xd</em>, <em class="sig-param">color=None</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.create_sb_by_hierarchy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a data set containing the correlation points and a hierarchy,
+create a list of SB objects.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>data: DataFrame</dt><dd><p>The info about the correlation points</p>
+</dd>
+<dt>hierarchy: integer</dt><dd><p>The hierarchy that should be created</p>
+</dd>
+<dt>xd: numpy array</dt><dd><p>Discretized <em>x</em> coordinate</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>A list containing the SB objects, ordered by “chronology”</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.create_sb_from_data">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">create_sb_from_data</code><span class="sig-paren">(</span><em class="sig-param">data</em>, <em class="sig-param">xd</em>, <em class="sig-param">color=None</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.create_sb_from_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create all the SBs defined in a dataset</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>data: DataFrame</dt><dd><p>Info about the correlation points</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>A dictionary containing, for each hierarchy, a list
+of SBs.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_SBparent_by_name">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_SBparent_by_name</code><span class="sig-paren">(</span><em class="sig-param">data</em>, <em class="sig-param">sb_name</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_SBparent_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a data set, find the “parent” SB of a SB with a given name.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>data: data set (see package documentation for details)</dt><dd><p>The data set where to look for parents.</p>
+</dd>
+<dt>sb_name: string</dt><dd><p>The name of the SB of which looking for a “parent”</p>
+</dd>
+</dl>
+</dd>
+<dt>Return:</dt><dd><p>The parent object SB</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_SU_by_bot">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_SU_by_bot</code><span class="sig-paren">(</span><em class="sig-param">bot</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_SU_by_bot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the SU object corresponding to a given bottom SB.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_allmin">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_allmin</code><span class="sig-paren">(</span><em class="sig-param">sbs</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_allmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a list of objects, return the min of the <em>z</em> coordinate.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Warnings about all columns containing a NaN in <cite>nanmin</cite> is suppressed
+as it should not be harmful.</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_bot_sb">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_bot_sb</code><span class="sig-paren">(</span><em class="sig-param">sb</em>, <em class="sig-param">sbs</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_bot_sb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of SB objects that are potential candidates to
+provide the bottom for the given SB.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>sb: SBound
+sbs: list of SBound objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_intersect">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_intersect</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_intersect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a dataframe of points of SBs that intersect with the SB “name”.
+If there is no intersection, the output dataframe will be empty.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>name: </dt><dd><p>Name of the current SB we are working with</p>
+</dd>
+<dt>data:</dt><dd><p>Dataset containing the point correlations</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>A daframe containing the intersection points.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_max_chronology">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_max_chronology</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_max_chronology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the maximum chronology defined in the dataset.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>data: DataFrame</dt><dd><p>Info about the correlation points</p>
+</dd>
+</dl>
+</dd>
+<dt>Return:</dt><dd><p>The value of the max chronology</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_newer_sb_same_hie">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_newer_sb_same_hie</code><span class="sig-paren">(</span><em class="sig-param">sb</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_newer_sb_same_hie" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all the defined SBs with the same hierarchy but
+of greater chronology.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>sb: SBound</dt><dd><p>The interested SB.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_parent_by_name">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_parent_by_name</code><span class="sig-paren">(</span><em class="sig-param">data</em>, <em class="sig-param">sb_name</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_parent_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a data set, find the “parent” SB of a SB with a given name.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>data: data set (see package documentation for details)</dt><dd><p>The data set where to look for parents.</p>
+</dd>
+<dt>sb_name: string</dt><dd><p>The name of the SB of which looking for a “parent”</p>
+</dd>
+</dl>
+</dd>
+<dt>Return:</dt><dd><p>Name of the parent SB</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_sb_chronology">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_sb_chronology</code><span class="sig-paren">(</span><em class="sig-param">data</em>, <em class="sig-param">sb</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_sb_chronology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the chronology of the current SB.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>data: DataFrame</dt><dd><p>The point correlation info contained in the DBF file</p>
+</dd>
+<dt>sb: string</dt><dd><p>Name of the SB.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_sb_hierarchy">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_sb_hierarchy</code><span class="sig-paren">(</span><em class="sig-param">data</em>, <em class="sig-param">sb</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_sb_hierarchy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the hierarchy of the current SB.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>data: DataFrame</dt><dd><p>The point correlation info contained in the DBF file</p>
+</dd>
+<dt>sb: string</dt><dd><p>Name of the SB.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_sbobj">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_sbobj</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_sbobj" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all the SBs defined within the script,
+ordeder by “chronology”.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>A list containing all the defined SBs ordered by “chronology”.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_sbobj_by_hie">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_sbobj_by_hie</code><span class="sig-paren">(</span><em class="sig-param">hierarchy</em>, <em class="sig-param">mode='eq'</em>, <em class="sig-param">reverse=False</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_sbobj_by_hie" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all the SBs defined in the script with the given hierarchy,
+ordeder by “chronology”.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>hierarchy: integer</dt><dd><p>The hierarchy of the SBs to be plotted.</p>
+</dd>
+<dt>mode: in (“eq” or “ge”)</dt><dd><p>Depending on this optional value, one can get all the SBs
+of the same hierarchy (mode=”eq”) or all the objects with
+a &gt;= hierarchy.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>A list containing all the defined SBs with the given hierarchy, 
+ordered by “chronology”.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_sbobj_by_name">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_sbobj_by_name</code><span class="sig-paren">(</span><em class="sig-param">sb_name</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_sbobj_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all the SBs defined within the script,
+ordeder by “chronology”.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>A list containing all the defined SBs ordered by “chronology”.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_top_sb">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_top_sb</code><span class="sig-paren">(</span><em class="sig-param">sb</em>, <em class="sig-param">sbs</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_top_sb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of SB objects that are potential candidates to
+provide the bottom for the given SB</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>sb: SBound
+sbs: list of SBound objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_unique_chronology">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_unique_chronology</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_unique_chronology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract from a dataset al the defined chronologies.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>data: DataFrame</dt><dd><p>Info about the correlation points</p>
+</dd>
+</dl>
+</dd>
+<dt>Return:</dt><dd><p>A list containing the defined chronologies.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_unique_hierarchy">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_unique_hierarchy</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_unique_hierarchy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract from a dataset al the defined hierarchies.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>data: DataFrame</dt><dd><p>Info about the correlation points</p>
+</dd>
+</dl>
+</dd>
+<dt>Return:</dt><dd><p>A list containing the defined hierarchies.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.get_unique_sb_name">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">get_unique_sb_name</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.get_unique_sb_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an ordered list containing the unique names of the 
+SBs.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>data: input DataFrame</dt><dd><p>See the documentation for more details about the data format.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>A list containing the ordered ids</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.migrate">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">migrate</code><span class="sig-paren">(</span><em class="sig-param">df</em>, <em class="sig-param">xmesh</em>, <em class="sig-param">zmesh</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.migrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Migrate the “sparse” coordinates of some points contained in the “x” and
+“z” of a DataFrame into the points or a regularly spaced grid.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>df: pandas DataFrame</dt><dd><p>The dataframe containing the coordinates “x” and “z” to be migrated.</p>
+</dd>
+<dt>xmesh: “x” output from meshgrid</dt><dd><p>A matrix containing the <em>x</em> coordinates of a structured grid.</p>
+</dd>
+<dt>zmesh: “z” output from meshgrid</dt><dd><p>A matrix containing the <em>z</em> coordinates of a structured grid.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.plot_sb_ax">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">plot_sb_ax</code><span class="sig-paren">(</span><em class="sig-param">ax</em>, <em class="sig-param">hies</em>, <em class="sig-param">palette=None</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.plot_sb_ax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot all the defined objects for all the provided hierarchies.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>ax:</dt><dd><p>The axis object</p>
+</dd>
+<dt>hies: List of integers.</dt><dd><p>Hierarchies to be plotted.</p>
+</dd>
+<dt>palette: Dictionary</dt><dd><p>A dictionary containing the codes corresponding to each SB.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.plot_sb_by_hie">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">plot_sb_by_hie</code><span class="sig-paren">(</span><em class="sig-param">hierarchy</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.plot_sb_by_hie" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot all the SB of a given hierarchy.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>hierarchy: integer</dt><dd><p>The hierarchy of the SBs to be plotted</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.plot_sb_by_hie_ax">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">plot_sb_by_hie_ax</code><span class="sig-paren">(</span><em class="sig-param">ax</em>, <em class="sig-param">hierarchy</em>, <em class="sig-param">palette=None</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.plot_sb_by_hie_ax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot all the SB of a given hierarchy.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>ax: axis object</dt><dd><p>The axis object where the plot should be made</p>
+</dd>
+<dt>hierarchy: integer</dt><dd><p>The hierarchy of the SBs to be plotted</p>
+</dd>
+<dt>palette: dictionary</dt><dd><p>A dictionary containing the correspondence between
+SB name and plotting color.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.plot_sb_fig">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">plot_sb_fig</code><span class="sig-paren">(</span><em class="sig-param">fig</em>, <em class="sig-param">hies</em>, <em class="sig-param">palette=None</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.plot_sb_fig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot all the defined objects for all the provided hierarchies.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>fig:</dt><dd><p>The axis object</p>
+</dd>
+<dt>hies: List of integers.</dt><dd><p>Hierarchies to be plotted.</p>
+</dd>
+<dt>palette: Dictionary</dt><dd><p>A dictionary containing the codes corresponding to each SB.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.plot_su_ax">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">plot_su_ax</code><span class="sig-paren">(</span><em class="sig-param">ax</em>, <em class="sig-param">hierarchy</em>, <em class="sig-param">hie_alpha</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.plot_su_ax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot a SU provided a matplotlib axis.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>ax: matplotlib axis</dt><dd><p>The axis where to plot the SU.</p>
+</dd>
+<dt>hierarchy: integer</dt><dd><p>The min hierarchy to be plotted.</p>
+</dd>
+<dt>hie_alpha: float</dt><dd><p>Transparency value</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.print_data_info">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">print_data_info</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.print_data_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print some info about the data.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="hiegeo.print_start">
+<code class="sig-prename descclassname">hiegeo.</code><code class="sig-name descname">print_start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hiegeo.print_start" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print a header with the module name and the version.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="usage.html" class="btn btn-neutral float-left" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Alessandro Comunian
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
