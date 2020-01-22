@@ -7,13 +7,14 @@ alluvial architectures, constrained by stratigraphic hierarchy and
 relative chronology" by C.Zuffetti, A.Comunian, R.Bersezio and
 P.Renard.
 
-For additional information about how to install and run the provided
-Python scripts, please check out the `Wiki page
-<https://bitbucket.org/alecomunian/hiegeo/wiki>`_, or the full
-documentation from `this link
+Hereiafter we report a brief "quick start guide".  For additional
+information about how to install and run the provided Python scripts,
+please check out the full documentation from `this link
 <https://hiegeo.readthedocs.io/en/latest/index.html>`_ can be also
 dowloaded as PDF, EPUB and also as a local HTML archive `here
 <https://readthedocs.org/projects/hiegeo/downloads/>`_.
+
+
 
 Installation
 =========================
@@ -43,3 +44,4 @@ On Linux you will probably need to give execution rights to the file, like this:
   chmod +x hiegeo_test-simple.py
 
     
+
