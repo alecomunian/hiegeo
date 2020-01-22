@@ -19,7 +19,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'hiegeo'
-copyright = '2019, Alessandro Comunian'
+copyright = '2020, Alessandro Comunian'
 author = 'Alessandro Comunian'
 
 

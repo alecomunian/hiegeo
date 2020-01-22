@@ -3,9 +3,6 @@ Usage
 This section describe an example usage of `hiegeo`.
 
 
-
-
-
 Input files
 *******************
 
@@ -20,7 +17,7 @@ For properly run `hiegeo`, you need two files:
 JSON file
 ------------------
 
-An example `JSON` file is provided in the file ``hiegeo_test.json``. It contains three main sections:
+An example `JSON` file is provided in the file ``examples/hiegeo_test.json``. It contains three main sections:
 
 colors
     This section contains the definition (HEX format) of the color that should be given to each SB.
@@ -74,7 +71,7 @@ y
 Example scripts
 **********************
 
-Here two example scripts are provided. One file
+Here two example scripts are provided in the `examples` folder. One file
 (`hiegeo_test-simple.py`) contains a full working example to read
 data, plot with a basic layout SBs and SUs, and provide a hierarchical
 representation of the geology with a tree structure. The other file,
@@ -85,3 +82,14 @@ a GSLIB output file.
 
 Both script should be sufficiently documented to allow running them
 without additional information.
+
+You can move to the folder ``examples`` and there, from
+the command line, run one of the two provided demostration scripts.
+For example::
+
+  ./hiegeo_test-simple.py
+
+and hit <Enter>.
+On Linux you will probably need to give execution rights to the file, like this::
+
+  chmod +x hiegeo_test-simple.py

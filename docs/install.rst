@@ -11,7 +11,9 @@ Requirements
 To use the `hiegeo` module you need a standard Python3.X installation,
 together with the main mathematical and plotting libraries (``numpy``,
 ``pandas``, ``matplotlib`` etc) and the module ``anytree``, which is
-required to handle the hierarchical structures.
+required to handle the hierarchical structures. If ``pip`` is used for
+the installation, all there requirement should be automatically
+satisfied.
 
 Python
 ************
@@ -24,46 +26,21 @@ download and install the Python (version 3.X) of Anaconda which is
 suitable for your OS by following the instruction provided on the
 Anaconda web site.
 
-The `anytree` module
-*************************
+Install `hiegeo`
+-----------------------
 
-Some capabilities of `hiegeo` are provided by the Python `anytree`
-module (`https://pypi.org/project/anytree/
-<https://pypi.org/project/anytree/>`_). Once installed Anaconda, you can open the `Anaconda prompt` and install it by typing::
+The suggested way is to use ``pip`` (which should be also already
+available with `Anaconda`).
 
-    pip install anytree
+1) Clone or download the repository on your hard drive.
+2) If required, unpack it and enter the folder with ``cd hiegeo``.
+3) Inside the project directory, from the command line::
 
+     pip install -e .
 
-To verify if the installation worked properly, you can open a Python
-shell and check that the line :code:`import anytree` works and does not
-provide any error output.
-    
+4) To check if it worked, open a Python terminal and try::
 
-
-The `hiegeo` module
-*********************
-
-If you keep the provided module file (``hiegeo.py``) in the same
-directory of the calling script, then everything should work as it is.
-
-Alternatively, if you prefer to have more flexibility, you can put the
-file ``hiegeo.py`` in a directory that should be included in your
-``PYTHONPATH`` environmental variable. If you are using the editor
-`Spyderlib`, included in Anaconda, to do that you can use the ``Python
-Path Manager``; in that case you will need to **restart** Spyderlib.
-
-
-Verification
------------------
-
-In the end, to verify if ``hiegeo`` was properly installed and
-available to your Python script, you can call it from the Python shell with
-
-.. sourcecode:: python
-  
-    include hiegeo
-
-to double check is any error rises.
+     import hiegeo
 
 
 
