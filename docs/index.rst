@@ -10,6 +10,8 @@ Welcome to the `hiegeo`'s documentation, a Python module to model
 geology taking into account for hierarchy and chronological order
 among the geological structures.
 
+.. Contents:
+   
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
