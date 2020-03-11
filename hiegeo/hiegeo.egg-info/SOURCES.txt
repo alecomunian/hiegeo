@@ -1,7 +1,0 @@
-README.rst
-setup.py
-hiegeo/hiegeo.egg-info/PKG-INFO
-hiegeo/hiegeo.egg-info/SOURCES.txt
-hiegeo/hiegeo.egg-info/dependency_links.txt
-hiegeo/hiegeo.egg-info/requires.txt
-hiegeo/hiegeo.egg-info/top_level.txt
