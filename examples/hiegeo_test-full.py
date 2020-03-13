@@ -165,7 +165,7 @@ fig = pl.figure(figsize=(8,5))
 ax = pl.subplot(111)
 
 ax.set_title("Stratigraphic boundaries, Hierarchy 3,2,1")
-hiegeo.plot_sb_ax(ax, [3,2,1])
+hiegeo.plot_sb_ax(ax, [1,2,3])
 
 ax.set_xlabel("x [m]")
 ax.set_ylabel("z [m]")
@@ -177,8 +177,9 @@ pl.legend(bbox_to_anchor=(1.04,1), loc="upper left")
 pl.tight_layout()
 
 pl.savefig("SBs_Hierarchy3-2-1_simple.png", dpi=400)
+pl.savefig("SBs_Hierarchy3-2-1_simple.pdf")
 pl.close()
-print('    - Plotted figure "SBs_Hierarchy3-2-1_simple.png"')
+print('    - Plotted figure "SBs_Hierarchy3-2-1_simple.png/pdf"')
 
 # ==============================================================
 # Plot SBs (complete version, for Hierarchy 3,2 & 1)
@@ -193,7 +194,7 @@ fig, ax  = pl.subplots(1,1, figsize=(8,5))
 ax.set_position([0.1,0.1,0.65,0.8])
 
 pl.title("Stratigraphic boundaries, Hierarchy 3,2,1")
-hiegeo.plot_sb_ax(ax, [3,2,1])
+hiegeo.plot_sb_ax(ax, [1,2,3])
 
 pl.xlabel("x [m]")
 pl.ylabel("z [m]")
@@ -240,8 +241,9 @@ leg1 = pl.legend(handles=hand1, bbox_to_anchor=(1.04, 0.3), loc="upper left",
 pl.gca().add_artist(leg1)
 
 pl.savefig("SBs_Hierarchy3-2-1.png", dpi=400)
+pl.savefig("SBs_Hierarchy3-2-1.pdf")
 pl.close()
-print('    - Plotted figure "SBs_Hierarchy3-2-1.png"')
+print('    - Plotted figure "SBs_Hierarchy3-2-1.png/pdf"')
 
 
 # ==============================================================
@@ -257,7 +259,7 @@ fig, ax  = pl.subplots(1,1, figsize=(8,5))
 ax.set_position([0.1,0.1,0.65,0.8])
 
 pl.title("Stratigraphic boundaries, Hierarchy 3,2")
-hiegeo.plot_sb_ax(ax, [3,2])
+hiegeo.plot_sb_ax(ax, [2,3])
 
 pl.xlabel("x [m]")
 pl.ylabel("z [m]")
@@ -293,8 +295,9 @@ leg2 = pl.legend(handles=hand2, bbox_to_anchor=(1.04, 0.6), loc="upper left",
 pl.gca().add_artist(leg2)
 
 pl.savefig("SBs_Hierarchy3-2.png", dpi=400)
+pl.savefig("SBs_Hierarchy3-2.pdf")
 pl.close()
-print('    - Plotted figure "SBs_Hierarchy3-2.png"')
+print('    - Plotted figure "SBs_Hierarchy3-2.png/pdf"')
 
 
 # ==============================================================
@@ -335,8 +338,9 @@ leg3 = pl.legend(handles=hand3, bbox_to_anchor=(1.04, 1), loc="upper left",
 pl.gca().add_artist(leg3)
 
 pl.savefig("SBs_Hierarchy3.png", dpi=400)
+pl.savefig("SBs_Hierarchy3.pdf")
 pl.close()
-print('    - Plotted figure "SBs_Hierarchy3.png"')
+print('    - Plotted figure "SBs_Hierarchy3.png/pdf"')
 
 
 # ==============================================================
@@ -389,13 +393,14 @@ for i, sbob in enumerate(sbobs_eq[curr_hie][:-1]):
 # ==============================================================
 fig, ax  = pl.subplots(1,1, figsize=(8,5)) 
 ax.set_position([0.1,0.1,0.65,0.8])
-
+ 
 hand3 = []
 curr_hie = 3
 for i, sbob in enumerate(sbobs_eq[curr_hie][:-1]):
     pl.fill_between(SUs[curr_hie][i].bot.xd, SUs[curr_hie][i].z_bot,
                     SUs[curr_hie][i].z_top, where=SUs[curr_hie][i].domain,
-                    label=SUs[curr_hie][i].name, facecolor=sbob.color)
+                    label=SUs[curr_hie][i].name, facecolor=sbob.color,
+                        edgecolor="black", lw=0.5)
     hand3.append(mpatches.Patch(color=sbob.color,
                                 label="{0.name}".format(SUs[curr_hie][i]), lw=3))    
 
@@ -410,7 +415,8 @@ pl.xlabel("x [m]")
 pl.ylabel("z [m]")
 
 pl.savefig("SUs_Hierarchy3.png", dpi=400)
-print('    - Plotted figure "SUs_Hierarchy3.png"')
+pl.savefig("SUs_Hierarchy3.pdf")
+print('    - Plotted figure "SUs_Hierarchy3.png/pdf"')
 pl.close()
 
 curr_hie = 2
@@ -445,7 +451,8 @@ curr_hie = 3
 for i, sbob in enumerate(sbobs_eq[curr_hie][:-1]):
     pl.fill_between(SUs[curr_hie][i].bot.xd, SUs[curr_hie][i].z_bot,
                     SUs[curr_hie][i].z_top, where=SUs[curr_hie][i].domain,
-                    label=SUs[curr_hie][i].name, facecolor=sbob.color)
+                    label=SUs[curr_hie][i].name, facecolor=sbob.color,
+                        edgecolor="black", lw=0.5)
     hand3.append(mpatches.Patch(color=sbob.color,
                                 label="{0.name}".format(SUs[curr_hie][i]), lw=3))    
 
@@ -454,12 +461,14 @@ leg3 = pl.legend(handles=hand3, bbox_to_anchor=(1.04, 1), loc="upper left",
 ax = pl.gca().add_artist(leg3)
 
 hand2 = []
-col = ["#5588c5", "#ffc655", "#7ac555", "#55c5ee"]
+# Colors for S0-1, S1-1, 
+col = ["#e46668", "#fdc995", "#c7e5f0", "#72a7ce"]
 curr_hie = 2
 for i, sbob in enumerate(sbobs_eq[curr_hie]):
     pl.fill_between(SUs[curr_hie][i].bot.xd, SUs[curr_hie][i].z_bot,
                     SUs[curr_hie][i].z_top, where=SUs[curr_hie][i].domain,
-                    label=SUs[curr_hie][i].name, color=col[i])
+                    label=SUs[curr_hie][i].name, facecolor=col[i],
+                        edgecolor="black", lw=0.5)
     hand2.append(mpatches.Patch(color=col[i],
                                 label="{0.name}".format(SUs[curr_hie][i]), lw=3))        
 
@@ -474,7 +483,8 @@ pl.xlabel("x [m]")
 pl.ylabel("z [m]")
 
 pl.savefig("SUs_Hierarchy3-2.png", dpi=400)
-print('    - Plotted figure "SUs_Hierarchy3-2.png"')
+pl.savefig("SUs_Hierarchy3-2.pdf")
+print('    - Plotted figure "SUs_Hierarchy3-2.png/pdf"')
 pl.close()
 
 
@@ -509,7 +519,8 @@ curr_hie = 3
 for i, sbob in enumerate(sbobs_eq[curr_hie][:-1]):
     pl.fill_between(SUs[curr_hie][i].bot.xd, SUs[curr_hie][i].z_bot,
                     SUs[curr_hie][i].z_top, where=SUs[curr_hie][i].domain,
-                    label=SUs[curr_hie][i].name, facecolor=sbob.color)
+                    label=SUs[curr_hie][i].name, facecolor=sbob.color,
+                        edgecolor="black", lw=0.5)
     hand3.append(mpatches.Patch(color=sbob.color,
                                 label="{0.name}".format(SUs[curr_hie][i]), lw=3))    
 
@@ -518,12 +529,13 @@ leg3 = pl.legend(handles=hand3, bbox_to_anchor=(1.04, 1), loc="upper left",
 ax = pl.gca().add_artist(leg3)
 
 hand2 = []
-col = ["#5588c5", "#ffc655", "#7ac555", "#55c5ee"]
+col = ["#e46668", "#fdc995", "#c7e5f0", "#72a7ce"]
 curr_hie = 2
 for i, sbob in enumerate(sbobs_eq[curr_hie]):
     pl.fill_between(SUs[curr_hie][i].bot.xd, SUs[curr_hie][i].z_bot,
                     SUs[curr_hie][i].z_top, where=SUs[curr_hie][i].domain,
-                    label=SUs[curr_hie][i].name, color=col[i])
+                    label=SUs[curr_hie][i].name, facecolor=col[i],
+                        edgecolor="black", lw=0.5)
     hand2.append(mpatches.Patch(color=col[i],
                                 label="{0.name}".format(SUs[curr_hie][i]), lw=3))        
 
@@ -534,11 +546,12 @@ ax = pl.gca().add_artist(leg2)
 
 hand1 = []
 curr_hie = 1
-col = ["#ffe2aa", "#bce2aa"]
+col = ["#fee4ca", "#e3f2f7"]
 for i, sbob in enumerate(sbobs_eq[curr_hie]):
     pl.fill_between(SUs[curr_hie][i].bot.xd, SUs[curr_hie][i].z_bot,
                     SUs[curr_hie][i].z_top, where=SUs[curr_hie][i].domain,
-                    label=SUs[curr_hie][i].name, color=col[i])
+                    label=SUs[curr_hie][i].name, facecolor=col[i],
+                        edgecolor="black", lw=0.5)
     hand1.append(mpatches.Patch(color=col[i],
                                 label="{0.name}".format(SUs[curr_hie][i]), lw=3))
 
@@ -554,7 +567,8 @@ pl.xlabel("x [m]")
 pl.ylabel("z [m]")
 
 pl.savefig("SUs_Hierarchy3-2-1.png", dpi=400)
-print('    - Plotted figure "SUs_Hierarchy3-2-1.png"')
+pl.savefig("SUs_Hierarchy3-2-1.pdf")
+print('    - Plotted figure "SUs_Hierarchy3-2-1.png/pdf"')
 pl.close()
 
 
@@ -588,6 +602,7 @@ for hiemin in hiemins:
     # Plot hierarchies
     #
     file_png = "SUs_min-hierarchy{0}.png".format(hiemin)
+    file_pdf = "SUs_min-hierarchy{0}.pdf".format(hiemin)    
     fig = pl.figure(figsize=(8,5))
     ax = pl.subplot(111)
     ax.set_position([0.1,0.1,0.65,0.8])
@@ -605,6 +620,7 @@ for hiemin in hiemins:
     ax.legend(bbox_to_anchor=(1.04,1), loc="upper left")
 
     pl.savefig(file_png, dpi=400)
+    pl.savefig(file_pdf)    
     pl.close()
 
 # ==============================================================

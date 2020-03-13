@@ -1,11 +1,11 @@
 {
     "colors": {
         "topo": "#000000",
-        "S0": "#004da8",
-        "S1": "#ffaa00",
-        "S2": "#a900e6",
-        "S3": "#38a800",
-        "S4": "#00a9e6"
+        "S0": "#d7191c",
+        "S1": "#fdae61",
+        "S2": "#ffffbf",
+        "S3": "#abd9e9",
+        "S4": "#2c7bb6"
     },
     "data_file": "./data/data.csv",
     "grid": {

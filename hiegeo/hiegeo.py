@@ -31,6 +31,12 @@
     See ``hiegeo_test-simple.py`` and ``hiegeo_test-full.py`` for an example usage.
 
 :Version:
+    1.9.1, 2020-03-11 :
+        - Improved the colorscale (color blindness OK)
+        - Improved the provided dataset (smooth topography)
+        - Improved the overlapping order of the different topographies
+        - Added borders to line representation in order to provide more
+          flexibility for the usage of different colorscales.
     1.9, 2019-10-02 :
         Some clean up an adding License information.
     1.8, 2019-07-31 :
@@ -74,8 +80,6 @@
 
 """
 
-__version__ = "2019.10.02"
-__Author__ = "Alessandro Comunian"
 
 import numpy as np
 import matplotlib.pylab as pl
@@ -83,6 +87,7 @@ import gc
 import warnings
 import anytree as at
 import sys
+import matplotlib.patheffects as pe
 
 # This is to avoid warning with the broken_line function
 warnings.simplefilter('ignore', np.RankWarning)
@@ -329,12 +334,18 @@ class SBound(at.NodeMixin):
         """
         try:
             ax.plot(self.xd, self.zd, label="{0} ({1})".format(self.name,
-                    self.chronology), linewidth=lw, color=self.color)
+                                                               self.chronology), linewidth=lw, color=self.color,
+                    path_effects=[pe.Stroke(linewidth=lw+0.5,
+                                            foreground='black'),
+                                  pe.Normal()])
         except:
             x = self.raw_coord.sort_values(by=["x"])["x"]
             z = self.raw_coord.sort_values(by=["x"])["z"]            
             ax.plot(x, z, label="{0} ({1})".format(self.name, self.chronology),
-                    linewidth=lw, color=self.color)
+                    linewidth=lw, color=self.color,
+                    path_effects=[pe.Stroke(linewidth=lw+0.5,
+                                            foreground='black'),
+                                  pe.Normal()])
 
     def get_ancestors(self, anc_list=[]):
         """
@@ -402,8 +413,9 @@ class SBound(at.NodeMixin):
                         get_allmin(self.get_obj_above(hierarchy)),
                         where=~np.isnan(self.zd),
                         label=self.name,
-                        color=self.color,
-                        alpha = alpha
+                        facecolor=self.color,
+                        alpha = alpha,
+                        edgecolor="black", lw=0.5
         )
 
         

@@ -166,7 +166,7 @@ fig = pl.figure(figsize=(8,5))
 ax = pl.subplot(111)
 
 ax.set_title("Stratigraphic boundaries, Hierarchy 3,2,1")
-hiegeo.plot_sb_ax(ax, [3,2,1])
+hiegeo.plot_sb_ax(ax, [1,2,3])
 
 ax.set_xlabel("x [m]")
 ax.set_ylabel("z [m]")
@@ -178,8 +178,9 @@ pl.legend(bbox_to_anchor=(1.04,1), loc="upper left")
 pl.tight_layout()
 
 pl.savefig("SBs_Hierarchy3-2-1_simple.png", dpi=400)
+pl.savefig("SBs_Hierarchy3-2-1_simple.pdf")
 pl.close()
-print('    - Plotted figure "SBs_Hierarchy3-2-1_simple.png"')
+print('    - Plotted figure "SBs_Hierarchy3-2-1_simple.png/png"')
 
 # ==============================================================
 # SU related
@@ -239,6 +240,7 @@ for hiemin in hiemins:
     # Plot hierarchies
     #
     file_png = "SUs_min-hierarchy{0}.png".format(hiemin)
+    file_pdf = "SUs_min-hierarchy{0}.pdf".format(hiemin)    
     fig = pl.figure(figsize=(8,5))
     ax = pl.subplot(111)
     ax.set_position([0.1,0.1,0.65,0.8])
@@ -256,8 +258,9 @@ for hiemin in hiemins:
     ax.legend(bbox_to_anchor=(1.04,1), loc="upper left")
 
     pl.savefig(file_png, dpi=400)
+    pl.savefig(file_pdf)    
     pl.close()
-
+ 
 # ==============================================================
 # Plot the hierarchical representation
 # ==============================================================
