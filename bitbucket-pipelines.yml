@@ -17,5 +17,13 @@ pipelines:
         trigger: manual
         script:
             - echo "This step runs once you click the 'Run' button"
+    - step:
+        name: Manually upload to PyPI
+        trigger: manual
+        script:
+            - pipe: atlassian/pypi-publish:0.2.12
+              variables:
+                  PYPI_USERNAME: $PYPI_USERNAME
+                  PYPI_PASSWORD: $PYPI_PASSWORD
 
           
