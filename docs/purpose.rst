@@ -1,15 +1,20 @@
 Purpose
 =================
 
-The purpose of the `hiegeo` Python module is to propose a novel
-approach to geological modeling, that takes into account for the
-hierarchy and the chronological order of the geological structures to
-be represented.
+The purpose of the `hiegeo` Python module is to illustrate the
+conceptualization of a novel approach to geological modeling, that
+takes into account for the hierarchy and the chronological order of
+the geological structures to be represented. It is not intended to
+replace any existing state of art geological modeling tool. Instead,
+it could be an useful tool to illustrate and demonstrate some clear
+modeling guidelines for hierarchical structures, which could be then
+implemented in more sophisticated tools.
 
 See the manuscript *hiegeo: a novel Python module to model
 stratigraphic alluvial architectures, constrained by stratigraphic
-hierarchy and relative chronology* by Chiara Zuffetti, Alessandro
-Comunian, Riccardo Bersezio, and Philippe Renard for more details.
+hierarchy and relative chronology* (Computers and Geosciences,
+*submitted*) by Chiara Zuffetti, Alessandro Comunian, Riccardo Bersezio,
+and Philippe Renard for more details.
 
 Hereinafter you can see one of the possible output provided by
 `hiegeo`, for example a representation of the geology in terms of

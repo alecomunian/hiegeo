@@ -65,9 +65,15 @@ x
 y
     The coordinate along the :math:`y` axis of the (contact) points
     
-    
+The following picture provides an illustration of the (subsurface)
+points contained in the data-set used for demonstrating the working
+principle of `hiegeo`.
 
-
+.. image:: _static/points.png
+   :width: 100%
+   :alt: Subsurface points used in the dataset.
+	 
+	 
 Example scripts
 **********************
 
