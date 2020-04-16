@@ -32,8 +32,18 @@ Install `hiegeo`
 The suggested way is to use ``pip`` (which should be also already
 available with `Anaconda`).
 
-1) Clone or download the repository on your hard drive.
-2) If required, unpack it and enter the folder with ``cd hiegeo``.
+``hiegeo`` is available at the `Python Package Index repository
+<https://pypi.org/project/hiegeo/>`_. Therefore, in can be easily
+installed (together with its dependencies) with the command::
+
+    pip install hiegeo
+
+Alternatively, if you prefer to download the sources from
+`https://bitbucket.org/alecomunian/hiegeo
+<https://bitbucket.org/alecomunian/hiegeo>`_, you can:
+
+1) Clone or download this repository on your hard drive.
+2) If required, unpack it and ``cd hiegeo``.
 3) Inside the project directory, from the command line::
 
      pip install -e .

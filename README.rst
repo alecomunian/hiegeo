@@ -1,13 +1,13 @@
 README
 ===================
 
-This is the README file for the supplementary material provided with
-the manuscript "hiegeo: a novel Python module to model stratigraphic
-alluvial architectures, constrained by stratigraphic hierarchy and
-relative chronology" by C.Zuffetti, A.Comunian, R.Bersezio and
-P.Renard.
+This is the README file for the Python module ``hiegeo``, described in
+the manuscript *A new perspective to model subsurface stratigraphy in
+alluvial hydrogeological basins, introducing geological hierarchy and
+relative chronology* by C.Zuffetti, A.Comunian, R.Bersezio and
+P.Renard, submitted to Computers and Geosciences.
 
-Hereiafter we report a brief "quick start guide".  For additional
+Hereinafter we report a brief "quick start guide".  For additional
 information about how to install and run the provided Python scripts,
 please check out the full documentation from `this link
 <https://hiegeo.readthedocs.io/en/latest/index.html>`_ can be also
@@ -15,9 +15,18 @@ dowloaded as PDF, EPUB and also as a local HTML archive `here
 <https://readthedocs.org/projects/hiegeo/downloads/>`_.
 
 
-
 Installation
 =========================
+
+``hiegeo`` is available at the `Python Package Index repository
+<https://pypi.org/project/hiegeo/>`_. Therefore, in can be easily
+installed (together with its dependencies) with the command::
+
+    pip install hiegeo
+
+Alternatively, if you prefer to download the sources from
+`https://bitbucket.org/alecomunian/hiegeo
+<https://bitbucket.org/alecomunian/hiegeo>`_, you can:
 
 1) Clone or download this repository on your hard drive.
 2) If required, unpack it and ``cd hiegeo``.
