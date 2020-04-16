@@ -10,15 +10,18 @@ it could be an useful tool to illustrate and demonstrate some clear
 modeling guidelines for hierarchical structures, which could be then
 implemented in more sophisticated tools.
 
-See the manuscript *hiegeo: a novel Python module to model
+See the manuscript "A new perspective to model subsurface stratigraphy
+in alluvial hydrogeological basins, introducing geological hierarchy
+and relative chronologyhiegeo: a novel Python module to model
 stratigraphic alluvial architectures, constrained by stratigraphic
-hierarchy and relative chronology* (Computers and Geosciences,
-*submitted*) by Chiara Zuffetti, Alessandro Comunian, Riccardo Bersezio,
-and Philippe Renard for more details.
+hierarchy and relative chronology" (Computers and Geosciences,
+*submitted*) by Chiara Zuffetti, Alessandro Comunian, Riccardo
+Bersezio, and Philippe Renard for more details.
 
 Hereinafter you can see one of the possible output provided by
 `hiegeo`, for example a representation of the geology in terms of
-stratigraphic boundaries (SBs) including only the 3rd level of hierarchy, the 3rd and the 2nd, and 3rd, 2nd and 1st:
+stratigraphic boundaries (SBs) including only the 3rd level of
+hierarchy, the 3rd and the 2nd, and 3rd, 2nd and 1st:
 
 .. image:: _static/SBs_Hierarchy3.png
    :width: 100%
@@ -32,7 +35,8 @@ stratigraphic boundaries (SBs) including only the 3rd level of hierarchy, the 3r
    :width: 100%
    :alt: Stratigraphic boundaries, hierarchy level 3, 2 and 1
 
-The same representation at different hierarchical levels can be obtained in terms of Stratigraphic Units (SUs):
+The same representation at different hierarchical levels can be
+obtained in terms of Stratigraphic Units (SUs):
 
 .. image:: _static/SUs_Hierarchy3.png
    :width: 100%

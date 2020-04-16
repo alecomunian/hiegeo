@@ -929,7 +929,6 @@ def print_start():
     print("    *     Constraining geological architectures with *")
     print("    *     - stratigraphic hierarchy and              *")
     print("    *     - chronological relations                  *")
-    print("    * version: {0}                            *".format(__version__) )
     print("    **************************************************")
     print("")
 
