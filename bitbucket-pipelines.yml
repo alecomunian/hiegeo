@@ -11,12 +11,7 @@ pipelines:
         caches:
           - pip
         script: # Modify the commands below to build your repository.
-          - pip install . 
-    - step:
-        name: Manual step
-        trigger: manual
-        script:
-            - echo "This step runs once you click the 'Run' button"
+          - pip install .
     - step:
         name: Manually upload to PyPI
         trigger: manual
