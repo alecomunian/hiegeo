@@ -2,3 +2,5 @@
 __pycache__
 hiegeo/hiegeo.egg-info/
 dist
+build
+hiegeo.egg-info
