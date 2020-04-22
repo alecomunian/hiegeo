@@ -12,10 +12,8 @@ implemented in more sophisticated tools.
 
 See the manuscript "A new perspective to model subsurface stratigraphy
 in alluvial hydrogeological basins, introducing geological hierarchy
-and relative chronologyhiegeo: a novel Python module to model
-stratigraphic alluvial architectures, constrained by stratigraphic
-hierarchy and relative chronology" (Computers and Geosciences,
-*submitted*) by Chiara Zuffetti, Alessandro Comunian, Riccardo
+and relative chronology" (Computers and Geosciences,
+*accepted*) by Chiara Zuffetti, Alessandro Comunian, Riccardo
 Bersezio, and Philippe Renard for more details.
 
 Hereinafter you can see one of the possible output provided by

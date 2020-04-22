@@ -10,10 +10,10 @@ Welcome to the `hiegeo`'s documentation, a Python module to
 demonstrate how to model geology taking into account for hierarchy and
 chronological order among the geological structures.
 
-This is the accompaining software of the manuscript "A new perspective
+This is the accompanying software of the manuscript "A new perspective
 to model subsurface stratigraphy in alluvial hydrogeological basins,
 introducing geological hierarchy and relative chronology", by
-C.Zuffetti, A.Comunian, R.Bersezion and P.Renard. Submitted to
+C.Zuffetti, A.Comunian, R.Bersezion and P.Renard, accepted for publication in
 Computers and Geosciences.
 
 .. Contents:

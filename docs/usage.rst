@@ -23,7 +23,7 @@ colors
     This section contains the definition (HEX format) of the color that should be given to each SB.
     The color should be provided for the highest hierarchy SBs only.
 data_file
-    The name of the CSV data file containing the dataset itself.
+    The name of the CSV data file containing the data-set itself.
 grid
     Info about the grid used to discretize the domain. The notation should be straightforward.
 
@@ -71,7 +71,7 @@ principle of `hiegeo`.
 
 .. image:: _static/points.png
    :width: 100%
-   :alt: Subsurface points used in the dataset.
+   :alt: Subsurface points used in the data-set.
 	 
 	 
 Example scripts
@@ -90,7 +90,7 @@ Both script should be sufficiently documented to allow running them
 without additional information.
 
 You can move to the folder ``examples`` and there, from
-the command line, run one of the two provided demostration scripts.
+the command line, run one of the two provided demonstration scripts.
 For example::
 
   ./hiegeo_test-simple.py
