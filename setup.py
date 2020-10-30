@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name="hiegeo",
-    version="0.1.6",
+    version="0.1.7",
     author="Alessandro Comunian",
     author_email="alessandro.comunian@unimi.it",
     description="Modelling stratigraphic alluvial architectures, constrained by stratigraphic hierarchy and relative chronology",
