@@ -5,7 +5,7 @@ This is the README file for the Python module ``hiegeo``, described in
 the manuscript *A new perspective to model subsurface stratigraphy in
 alluvial hydrogeological basins, introducing geological hierarchy and
 relative chronology* by C.Zuffetti, A.Comunian, R.Bersezio and
-P.Renard, accepted for publication in Computers and Geosciences.
+P.Renard, Computers and Geosciences, DOI: `10.1016/j.cageo.2020.104506 <https://doi.org/10.1016/j.cageo.2020.104506>`_.
 
 Hereinafter we report a brief "quick start guide".  For additional
 information about how to install and run the provided Python scripts,
@@ -26,7 +26,7 @@ installed (together with its dependencies) with the command::
 
 Alternatively, if you prefer to download the sources from
 `https://bitbucket.org/alecomunian/hiegeo
-<https://bitbucket.org/alecomunian/hiegeo>`_, you can:
+<https://bitbucket.org/alecomunian/hiegeo>`_ in "edit mode" you can:
 
 1) Clone or download this repository on your hard drive.
 2) If required, unpack it and ``cd hiegeo``.

@@ -13,8 +13,7 @@ chronological order among the geological structures.
 This is the accompanying software of the manuscript "A new perspective
 to model subsurface stratigraphy in alluvial hydrogeological basins,
 introducing geological hierarchy and relative chronology", by
-C.Zuffetti, A.Comunian, R.Bersezion and P.Renard, accepted for publication in
-Computers and Geosciences.
+C.Zuffetti, A.Comunian, R.Bersezion and P.Renard, Computers and Geosciences, DOI: `10.1016/j.cageo.2020.104506 <https://doi.org/10.1016/j.cageo.2020.104506>`_.
 
 .. Contents:
    
